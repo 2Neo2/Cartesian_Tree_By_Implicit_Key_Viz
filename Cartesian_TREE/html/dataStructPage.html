@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+  <title>Everything is on a Cartesian tree by an implicit key</title>
+  <script src="../libraries/p5.min.js"></script>
+  <script type="text/javascript">
+    new p5(); // On-demand global mode to use color() outside of setup
+  </script>
+</head>
+<body>
+    <div id = "canvas-placeholder"></div>
+
+    <div id = "controls">
+        <button style="--clr:#39FF14" id = "clear-btn"><span>Clear Tree</span><i></i></button>
+        <button style="--clr:#8A2BE2" id = "quick-fill-btn"><span>Rand Fill</span><i></i></button>
+        <button style="--clr:#5050da" id = "slow-fill-btn"><span>Sorted Fill</span><i></i></button>
+        <button style="--clr:#91E792" id = "add-btn"><span>Push</span><i></i></button>
+        <button style="--clr:#FF44CC" id = "search-btn"><span>Search</span><i></i></button>
+        <button style="--clr:#DDDE0C" id = "search-btn"><span>Split</span><i></i></button>
+        <button style="--clr:#775D01" id = "search-btn"><span>Merge</span><i></i></button>
+        <button style="--clr:#E01407" id = "erase-btn"><span>Erase</span><i></i></button>
+        <button style="--clr:#F7F643" id = "sum-btn"><span>Sum</span><i></i></button>
+        <button style="--clr:#04f7E8" id = "min-btn"><span>Min</span><i></i></button>
+        <span id = "speed-label">Animation Speed:</span>
+        <input id = "speed-slider" type="range" min = "0" max = "1.5" step = "0.1" value = "0.3"></input>
+        <a id = "gitHub-label" href = "">Need Help?</a>
+    </div>
+
+    <script src="../js/cartesian_tree_node.js"></script>
+    <script src="../js/cartesian_tree.js"></script>
+    <script src="../js/controls.js"></script>
+    <script src="../js/explorer.js"></script>
+    <script src="../js/setupTree.js"></script>
+
+    <div></div>
+</body>
+</html>
